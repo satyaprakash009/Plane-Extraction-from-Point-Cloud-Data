@@ -10,10 +10,10 @@ This project demonstrates how to extract the largest plane from a point cloud us
 The dataset used in this project is a point cloud stored in the .pcd file format. Point cloud data represents 3D spatial coordinates and can be obtained from various sources, including 3D scanning devices or publicly available datasets.
 
 
-- 'Filename: CSite1_orig-utm.pcd'
-- 'Format: PCD (Point Cloud Data)'
-- 'Content: The dataset contains 3D coordinates of points in space, and may not include color information.
-Ensure that the path to the .pcd file is correctly specified in the code.'
+- Filename: CSite1_orig-utm.pcd
+- Format: PCD (Point Cloud Data)
+- Content: The dataset contains 3D coordinates of points in space, and may not include color information.
+Ensure that the path to the .pcd file is correctly specified in the code.
 
 ## Prerequisites
 
