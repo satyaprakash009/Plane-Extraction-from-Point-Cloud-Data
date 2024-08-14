@@ -33,7 +33,7 @@ target_link_libraries(PointCloudProcessing ${Open3D_LIBRARIES} Eigen3::Eigen)
 
 - **Open3D**: 
   - Open3D should be built and installed on your system. You can use CMake to manage the build process.
-  - Instructions to install Open3D: [Open3D Installation Guide](http://www.open3d.org/docs/release/compilation.html)
+
 
 - **Eigen**: 
   - Eigen can be downloaded or installed through a package manager like `apt` for Ubuntu.
