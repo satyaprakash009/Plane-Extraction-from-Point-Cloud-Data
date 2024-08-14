@@ -1,0 +1,57 @@
+
+
+### CMakeLists.txt Configuration
+
+```cmake
+cmake_minimum_required(VERSION 3.10)
+project(PointCloudProcessing)
+
+# Find and include Open3D
+find_package(Open3D REQUIRED)
+include_directories(${Open3D_INCLUDE_DIRS})
+
+# Find and include Eigen
+find_package(Eigen3 REQUIRED)
+include_directories(${EIGEN3_INCLUDE_DIR})
+
+# Set C++ standard
+set(CMAKE_CXX_STANDARD 14)
+
+# Add the executable
+add_executable(PointCloudProcessing main.cpp)
+
+# Link libraries
+target_link_libraries(PointCloudProcessing ${Open3D_LIBRARIES} Eigen3::Eigen)
+```
+
+### Requirements Overview
+
+- **Open3D**: A library that supports 3D data processing (e.g., point cloud processing).
+- **Eigen**: A C++ template library for linear algebra, used for handling matrices and vectors.
+
+### Dependencies to Install
+
+- **Open3D**: 
+  - Open3D should be built and installed on your system. You can use CMake to manage the build process.
+  - Instructions to install Open3D: [Open3D Installation Guide](http://www.open3d.org/docs/release/compilation.html)
+
+- **Eigen**: 
+  - Eigen can be downloaded or installed through a package manager like `apt` for Ubuntu.
+  - Example command for Ubuntu: `sudo apt-get install libeigen3-dev`
+
+### Example `requirements.txt` in Plain Text
+
+For C++ projects, you typically have a `CMakeLists.txt` instead of a `requirements.txt` as in Python. However, the `requirements.txt` would conceptually include:
+
+```
+Eigen >= 3.3
+Open3D >= 0.14.1
+```
+
+### Installation Instructions
+
+1. **Clone Open3D**: `git clone https://github.com/isl-org/Open3D`
+2. **Build Open3D**: Follow the instructions in the Open3D documentation.
+3. **Install Eigen**: If not already installed, you can install Eigen via a package manager.
+
+After setting up these dependencies, you should be able to compile and run the C++ code using CMake.
